@@ -149,18 +149,125 @@ ul { list-style: none; }
   background: rgba(201,168,76,0.06);
 }
 
+.nav-logo span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(201,168,76,0.25);
+
+  background: rgba(201,168,76,0.05);
+
+  box-shadow:
+  0 0 0 1px rgba(201,168,76,0.08),
+  0 0 18px rgba(201,168,76,0.12);
+}
+
 .hamburger {
   display: none;
-  background: none;
-  border: 1px solid var(--border);
-  color: var(--text);
-  font-size: 1.2rem;
-  padding: 0.35rem 0.7rem;
-  border-radius: var(--radius);
+  align-items: center;
+  justify-content: center;
+
+  width: 46px;
+  height: 46px;
+
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(201,168,76,0.15);
+
+  color: var(--gold);
+
+  border-radius: 12px;
   cursor: pointer;
-  transition: all var(--transition);
+
+  transition: all .3s ease;
 }
-.hamburger:hover { border-color: var(--gold); color: var(--gold); }
+
+.hamburger:hover {
+  background: rgba(201,168,76,0.08);
+  border-color: var(--gold);
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 0 1.2rem;
+    height: 72px;
+  }
+
+  .nav-logo {
+    font-size: 1.7rem;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    z-index: 1100;
+
+    top: 85px;
+    left: 1rem;
+    right: 1rem;
+
+    flex-direction: column;
+    gap: 0.75rem;
+
+    padding: 1rem;
+
+    background: rgba(18,18,18,0.95);
+    backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(201,168,76,0.15);
+    border-radius: 18px;
+
+    box-shadow:
+      0 10px 40px rgba(0,0,0,0.4);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-15px);
+
+    transition: all .35s ease;
+  }
+
+  .nav-links.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    width: 100%;
+    display: block;
+
+    text-align: center;
+
+    padding: 1rem;
+
+    border-radius: 12px;
+
+    font-size: 0.9rem;
+
+    background: rgba(255,255,255,0.02);
+  }
+
+  .nav-links a:hover {
+    background: rgba(201,168,76,0.08);
+  }
+
+}
 
 /* =============================================
    BUTTONS
@@ -398,7 +505,7 @@ ul { list-style: none; }
   grid-template-rows: auto auto;
   gap: 1.25rem;
 }
-.card-lg { grid-column: span 3; display: grid; grid-template-columns: 1fr 2fr 1fr; align-items: center; gap: 2rem; }
+.card-lg { grid-column: span 3; grid-template-columns: 1fr 2fr 1fr; align-items: center; gap: 2rem; }
 
 .card {
   background: var(--surface);
@@ -1091,6 +1198,56 @@ EFEITO PROFISSIONAL:
   text-align: center;
 }
 .footer-bottom p { font-size: 0.78rem; color: var(--text-mute); }
+
+/* =============================================
+   FOOTER RESPONSIVO
+   ============================================= */
+
+@media (max-width: 768px) {
+
+  .footer {
+    padding-top: 2.5rem;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .footer-left {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .footer-logo {
+    font-size: 2.2rem;
+  }
+
+  .footer-left p {
+    font-size: 0.9rem;
+  }
+
+  .footer-links {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .footer-links a {
+    padding: 0.55rem 0.8rem;
+  }
+
+  .footer-bottom {
+    padding: 1rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.75rem;
+    line-height: 1.6;
+  }
+}
 
 /* =============================================
    ANIMATIONS
