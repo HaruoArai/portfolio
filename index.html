@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anderson Haru - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="header"></div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-text">AH</div>
+    <div class="hero-content">
+      <span class="hero-tag">Sistemas de Informação · UFMS</span>
+      <h1 class="hero-title">Anderson<br><em>Haru</em></h1>
+      <p class="hero-subtitle">Desenvolvedor em formação e assistente de cálculos na Procuradoria Geral do Estado.</p>
+      <div class="hero-cta">
+        <a href="sobre.html" class="btn-primary">Conheça minha história</a>
+        <a href="curriculo.html" class="btn-outline">Ver currículo</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- DESTAQUES -->
+  <section class="section highlights">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Destaques</span>
+        <h2>Um pouco do que já construí</h2>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card card-lg">
+          <div class="card-icon">
+            <img src="img/excel.png" alt="Excel">
+          </div>
+          <h3>Automação de Planilhas de Cálculos</h3>
+          <p>Desenvolvimento de planilhas em Excel com fórmulas avançadas e macros para automação de cálculos judiciais, controle de dados e geração de relatórios e indicadores gerenciais.</p>
+          <span class="card-tag">Excel · Automação</span>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <img src="img/python.png" alt="Python">
+          </div>
+          <h3>Python</h3>
+          <p>80h de formação em Python pelo Curso em Vídeo, com projetos práticos.</p>
+          <span class="card-tag">Python · 2022</span>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <img src="img/javascript.png" alt="JavaScript">
+          </div>
+          <h3>JavaScript</h3>
+          <p>40h de formação em JavaScript, base para desenvolvimento web moderno.</p>
+          <span class="card-tag">JS · 2025</span>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <img src="img/github.png" alt="GitHub">
+          </div>
+          <h3>Git & GitHub</h3>
+          <p>Controle de versão e colaboração em projetos com Git e GitHub.</p>
+          <span class="card-tag">Git · 2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROTÓTIPOS DAS ATIVIDADES PRÁTICAS -->
+  <section class="section prototypes">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Projetos</span>
+      <h2>Projetos desenvolvidos</h2>
+    </div>
+
+    <div class="proto-grid">
+
+      <!-- Biblioteca Virtual -->
+      <div class="proto-card">
+        <div class="proto-preview proto-p1">
+          <span class="proto-label">WEB</span>
+        </div>
+        <div class="proto-info">
+          <h4>Biblioteca Virtual</h4>
+          <p>
+            Sistema desenvolvido em equipe para gerenciamento de biblioteca.
+            Permite que usuários solicitem empréstimos de livros e que o
+            administrador aprove solicitações e gerencie o acervo por meio
+            de operações de cadastro, consulta, edição e exclusão de livros.
+          </p>
+          <span class="proto-tech">Java · Spring Boot · CRUD</span>
+        </div>
+      </div>
+
+      <!-- UCALC -->
+      <div class="proto-card">
+        <div class="proto-preview proto-p2">
+          <span class="proto-label">EXCEL</span>
+        </div>
+        <div class="proto-info">
+          <h4>Planilha de Controle UCALC</h4>
+          <p>
+            Planilha automatizada para controle e distribuição de cálculos
+            da Unidade de Cálculos da PGE. Utiliza macros e botões para
+            registrar automaticamente informações das abas de Distribuição
+            e Devolução na aba de Registros.
+          </p>
+          <span class="proto-tech">Excel · VBA · Automação</span>
+        </div>
+      </div>
+
+      <!-- PPREC -->
+      <div class="proto-card">
+        <div class="proto-preview proto-p3">
+          <span class="proto-label">WEB</span>
+        </div>
+        <div class="proto-info">
+          <h4>Projeto PPREC</h4>
+          <p>
+            Aplicação web para consulta e filtragem de dados de Precatórios
+            e ROPV. Os dados são carregados de planilhas Excel e exibidos
+            dinamicamente por meio de filtros interativos, proporcionando
+            pesquisa rápida e eficiente.
+          </p>
+          <span class="proto-tech">Node.js · Vue.js · Vuetify</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <div id="footer"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
