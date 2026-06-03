@@ -753,6 +753,43 @@ EFEITO PROFISSIONAL:
 }
 .interest-chip:hover { border-color: var(--gold); color: var(--gold); background: rgba(201,168,76,0.07); }
 
+/* =============================================
+   ABOUT RESPONSIVO
+   ============================================= */
+@media (max-width: 768px) {
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-photo-col {
+    width: 100%;
+    text-align: center;
+  }
+
+  .photo-frame {
+    width: 240px;
+    margin: 0 auto 2rem;
+  }
+
+  .photo-placeholder {
+    width: 240px;
+    height: 280px;
+  }
+
+  .about-quick-info {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .qi-item {
+    padding: 0.9rem 0;
+  }
+
+}
+
+
 /* ---------- Skills ---------- */
 .skills-section { background: var(--bg2); border-top: 1px solid var(--border); }
 
