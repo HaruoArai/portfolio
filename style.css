@@ -149,7 +149,7 @@ ul { list-style: none; }
   background: rgba(201,168,76,0.06);
 }
 
-.nav-logo span {
+.nav-logo a {
   display: flex;
   align-items: center;
   justify-content: center;
