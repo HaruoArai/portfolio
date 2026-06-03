@@ -97,7 +97,7 @@
           <input
             type="hidden"
             name="_next"
-            value="https://haruoarai.github.io/portfolio/contato.html">
+            value="https://haruoarai.github.io/portfolio/contato.html?enviado=true">
 
           <div class="form-group">
             <label for="nome">
@@ -197,12 +197,16 @@
     }
 
     // Verifica se voltou do FormSubmit
-    const params = new URLSearchParams(window.location.search);
+    document.addEventListener('DOMContentLoaded', () => {
 
-    if (params.get('enviado') === 'true') {
-      document.getElementById('form-container').classList.add('hidden');
-      document.getElementById('form-success').classList.remove('hidden');
-    }
+      const params = new URLSearchParams(window.location.search);
+
+      if (params.get('enviado') === 'true') {
+        document.getElementById('form-container').classList.add('hidden');
+        document.getElementById('form-success').classList.remove('hidden');
+      }
+
+    });
 
     function validarFormulario() {
       let valid = true;
