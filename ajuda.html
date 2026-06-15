@@ -15,9 +15,11 @@
   <section class="page-hero">
     <div class="container">
       <span class="section-tag">Documentação</span>
-      <h1 class="page-title">Heurísticas &amp; <em>Diretrizes</em></h1>
+      <h1 class="page-title">Avaliação de <em>Usabilidade</em></h1>
       <p style="color:var(--text-dim);font-size:0.95rem;margin-top:1rem;max-width:560px;">
-        Descrição e localização de cada heurística de usabilidade, diretriz ou padrão aplicado neste portfólio.
+        Esta página documenta as heurísticas de usabilidade, princípios de design,
+        acessibilidade e diretrizes de Interação Humano-Computador aplicadas durante
+        o desenvolvimento deste portfólio.
       </p>
     </div>
   </section>
@@ -26,99 +28,140 @@
     <div class="container">
 
       <div class="section-header">
-        <span class="section-tag">Nielsen (1994)</span>
-        <h2>10 Heurísticas de Usabilidade</h2>
+        <span class="section-tag">Avaliação Heurística</span>
+        <h2>Heurísticas de Nielsen Aplicadas</h2>
       </div>
 
       <div class="heuristic-grid">
 
         <div class="heuristic-card">
           <div class="heuristic-number">01</div>
-          <h4>Visibilidade do Status do Sistema</h4>
-          <p>O sistema mantém o usuário informado sobre o que está acontecendo, com feedback em tempo adequado.</p>
+          <h4>Visibilidade do Estado do Sistema</h4>
+          <p>O sistema deve informar continuamente ao usuário o que está acontecendo,
+            fornecendo feedback visual claro e imediato após cada interação.</p>
           <p class="heuristic-where">
-            <strong>Onde:</strong> Contador de caracteres no formulário de contato; estado de "enviado" após submissão; navbar com link ativo destacado em dourado.
+            <strong>Aplicação:</strong> Menu com destaque da página atual, animações de hover, efeitos de foco em formulários e confirmação visual após o envio de mensagens na página de contato.
           </p>
         </div>
 
         <div class="heuristic-card">
           <div class="heuristic-number">02</div>
-          <h4>Correspondência entre Sistema e Mundo Real</h4>
-          <p>O sistema fala a linguagem do usuário, com palavras, frases e conceitos familiares.</p>
+          <h4>Correspondência com o Mundo Real</h4>
+          <p>
+          Os elementos da interface utilizam linguagem simples e familiar,
+          evitando termos técnicos desnecessários.
+          </p>
           <p class="heuristic-where">
-            <strong>Onde:</strong> Rótulos do formulário em português claro ("Nome completo", "E-mail", "Assunto"); ícones intuitivos nos canais de contato (📱, ✉️); terminologia acessível nas seções.
+          <strong>Aplicação:</strong>
+          Seções nomeadas como Sobre Mim, Currículo, Projetos e Contato,
+          facilitando a compreensão imediata da navegação.
           </p>
         </div>
 
         <div class="heuristic-card">
           <div class="heuristic-number">03</div>
           <h4>Controle e Liberdade do Usuário</h4>
-          <p>Usuários frequentemente escolhem funções por engano e precisam de uma "saída de emergência" clara.</p>
+          <p>
+          O usuário pode navegar livremente entre as páginas do sistema sem perder contexto.
+          </p>
           <p class="heuristic-where">
-            <strong>Onde:</strong> Botão "Enviar outra mensagem" na tela de sucesso do formulário; navegação global sempre visível permitindo sair de qualquer página.
+          <strong>Aplicação:</strong>
+          Menu principal disponível em todas as páginas e links de navegação
+          sempre acessíveis, tanto no rodapé, quanto nos cabeçalhos. A logo "AH" no topo também é um link para página inicial.
           </p>
         </div>
 
         <div class="heuristic-card">
           <div class="heuristic-number">04</div>
           <h4>Consistência e Padrões</h4>
-          <p>Usuários não devem se perguntar se palavras, situações ou ações diferentes significam a mesma coisa.</p>
+          <p>
+          A interface mantém padrões visuais e comportamentais uniformes.
+          </p>
           <p class="heuristic-where">
-            <strong>Onde:</strong> Navbar idêntica em todas as páginas; paleta de cores, tipografia e espaçamentos consistentes via CSS variables; cards com o mesmo padrão visual.
+          <strong>Aplicação:</strong>
+          Paleta de cores, tipografia, componentes e estilos reutilizados
+          em todas as páginas do portfólio.
           </p>
         </div>
 
         <div class="heuristic-card">
           <div class="heuristic-number">05</div>
           <h4>Prevenção de Erros</h4>
-          <p>Um design cuidadoso evita que problemas ocorram antes de acontecerem.</p>
+          <p>
+          O sistema reduz a possibilidade de ações incorretas por meio de validações.
+          </p>
           <p class="heuristic-where">
-            <strong>Onde:</strong> Select com opções predefinidas no campo "Assunto"; limite de 500 caracteres na mensagem; placeholder indicativo em todos os campos; validação antes do envio.
+          <strong>Aplicação:</strong>
+          Podemos ver com mais força a aplicação dessa heurística na validação de campos obrigatórios na página "Contato", como e-mail válido,
+          limitação de caracteres e mensagens de orientação.
           </p>
         </div>
 
         <div class="heuristic-card">
           <div class="heuristic-number">06</div>
-          <h4>Reconhecimento em vez de Lembrança</h4>
-          <p>Minimize a carga de memória do usuário tornando objetos, ações e opções visíveis.</p>
+          <h4>Reconhecimento em vez de Memorização</h4>
+          <p>
+          As informações importantes permanecem visíveis,
+          reduzindo a necessidade de memorização.
+          </p>
           <p class="heuristic-where">
-            <strong>Onde:</strong> Link ativo realçado na navbar; breadcrumb visual de qual página o usuário está; ícones contextuais nas seções de experiência e cursos.
+          <strong>Aplicação:</strong>
+          Menu destacado, seções claramente identificadas
+          e uso de ícones para auxiliar a navegação.
           </p>
         </div>
 
         <div class="heuristic-card">
           <div class="heuristic-number">07</div>
           <h4>Flexibilidade e Eficiência de Uso</h4>
-          <p>Aceleradores — invisíveis para o usuário novato — permitem que usuários experientes realizem tarefas mais rapidamente.</p>
+          <p>
+          Usuários podem acessar rapidamente informações e recursos externos.
+          </p>
           <p class="heuristic-where">
-            <strong>Onde:</strong> Links diretos para GitHub e LinkedIn abrindo em nova aba; botão "Baixar PDF" na página de Currículo; links clicáveis de telefone (tel:) e e-mail (mailto:).
+          <strong>Aplicação:</strong>
+          Links diretos para GitHub, LinkedIn,
+          download de currículo e atalhos de contato.
           </p>
         </div>
 
         <div class="heuristic-card">
           <div class="heuristic-number">08</div>
-          <h4>Estética e Design Minimalista</h4>
-          <p>Diálogos não devem conter informação irrelevante ou raramente necessária.</p>
+          <h4>Design Estético e Minimalista</h4>
+          <p>
+          A interface prioriza informações relevantes,
+          eliminando elementos visuais desnecessários.
+          </p>
           <p class="heuristic-where">
-            <strong>Onde:</strong> Hero com apenas nome, tagline e dois botões de ação; cards de destaque com texto conciso; ausência de banners, pop-ups ou elementos ornamentais sem função.
+          <strong>Aplicação:</strong>
+          Layout limpo, hierarquia visual clara,
+          espaçamento consistente e foco no conteúdo.
           </p>
         </div>
 
         <div class="heuristic-card">
           <div class="heuristic-number">09</div>
-          <h4>Ajuda ao Usuário para Reconhecer, Diagnosticar e Corrigir Erros</h4>
-          <p>Mensagens de erro devem ser expressas em linguagem simples, indicar o problema e sugerir a solução.</p>
+          <h4>Reconhecimento e Correção de Erros</h4>
+          <p>
+          Mensagens de erro orientam o usuário sobre o problema encontrado.
+          </p>
           <p class="heuristic-where">
-            <strong>Onde:</strong> Mensagens de validação inline no formulário de contato ("Por favor, informe seu nome.", "Informe um e-mail válido."); borda vermelha no campo com erro.
+          <strong>Aplicação:</strong>
+          Campos inválidos destacados visualmente
+          e mensagens explicativas exibidas abaixo dos inputs.
           </p>
         </div>
 
         <div class="heuristic-card">
           <div class="heuristic-number">10</div>
           <h4>Ajuda e Documentação</h4>
-          <p>Embora seja melhor que o sistema possa ser usado sem documentação, pode ser necessário fornecer ajuda.</p>
+          <p>
+          Mesmo sendo um sistema simples,
+          informações complementares são disponibilizadas ao usuário.
+          </p>
           <p class="heuristic-where">
-            <strong>Onde:</strong> Esta própria página de Ajuda, acessível pelo menu em todas as telas, documenta as decisões de design e os padrões de usabilidade adotados.
+          <strong>Aplicação:</strong>
+          Esta página apresenta a documentação das decisões
+          de usabilidade adotadas no projeto.
           </p>
         </div>
 
@@ -126,8 +169,8 @@
 
       <!-- Diretrizes adicionais -->
       <div class="section-header" style="margin-top:5rem;">
-        <span class="section-tag">Diretrizes Adicionais</span>
-        <h2>Padrões e Boas Práticas</h2>
+        <span class="section-tag">Fundamentos de IHC</span>
+        <h2>Princípios de Design Aplicados</h2>
       </div>
 
       <div class="heuristic-grid">
@@ -137,40 +180,179 @@
           <h4>Responsividade (Responsive Web Design)</h4>
           <p>Layout adaptável a diferentes tamanhos de tela por meio de CSS Grid, Flexbox e media queries.</p>
           <p class="heuristic-where">
-            <strong>Onde:</strong> Todas as páginas; grid de cards colapsa de 3 colunas para 1 em mobile; navbar transforma-se em menu hambúrguer abaixo de 640px.
+            <strong>Aplicação:</strong> Todas as páginas; grid de cards colapsa de 3 colunas para 1 em mobile; navbar transforma-se em menu hambúrguer abaixo de 640px.
           </p>
         </div>
 
         <div class="heuristic-card">
           <div class="heuristic-number">B</div>
-          <h4>Contraste e Acessibilidade (WCAG 2.1)</h4>
-          <p>Contraste mínimo de 4.5:1 entre texto e fundo para garantir legibilidade a usuários com baixa visão.</p>
+          <h4>Acessibilidade</h4>
+          <p>Foram adotadas práticas para melhorar a legibilidade e a percepção visual dos conteúdos.</p>
           <p class="heuristic-where">
-            <strong>Onde:</strong> Texto <code>#e8e2d6</code> sobre fundo <code>#0e0e0e</code> (contraste ~15:1); dourado <code>#c9a84c</code> usado para destaque e ícones, não para texto corrido.
+            <strong>Aplicação:</strong> Contraste elevado entre texto e fundo, hierarquia tipográfica clara e foco visível em elementos interativos.
           </p>
         </div>
 
         <div class="heuristic-card">
           <div class="heuristic-number">C</div>
-          <h4>Hierarquia Visual e Tipografia</h4>
-          <p>Uso de escala tipográfica clara para guiar o olhar do usuário das informações mais importantes para as secundárias.</p>
+          <h4>Hierarquia Visual</h4>
+          <p>A organização dos elementos orienta naturalmente a leitura e a navegação do usuário.</p>
           <p class="heuristic-where">
-            <strong>Onde:</strong> Playfair Display (serif) para títulos e display; DM Sans para corpo; escala de tamanhos de 0.7rem a 8rem definida com <code>clamp()</code>.
+            <strong>Aplicação:</strong> Títulos destacados com Playfair Display, uso de espaçamentos consistentes e escala tipográfica responsiva.
           </p>
         </div>
 
         <div class="heuristic-card">
           <div class="heuristic-number">D</div>
           <h4>Feedback de Interação (Micro-interações)</h4>
-          <p>Elementos interativos fornecem resposta visual imediata ao hover, focus e click para confirmar a ação do usuário.</p>
+          <p>O sistema responde visualmente às ações do usuário, aumentando a percepção de interatividade.</p>
           <p class="heuristic-where">
-            <strong>Onde:</strong> Botões com elevação e brilho no hover; cards com borda dourada e translação vertical; links da navbar com underline animado; campos com glow dourado no focus.
+            <strong>Aplicação:</strong> Animações suaves, mudanças de cor em hover, efeitos de foco e transições em botões e cartões.
+          </p>
+        </div>
+
+        <div class="heuristic-card">
+          <div class="heuristic-number">E</div>
+          <h4>Affordance</h4>
+          <p>
+            Os elementos da interface indicam visualmente como devem ser utilizados,
+            reduzindo dúvidas e tornando a interação mais intuitiva.
+          </p>
+          <p class="heuristic-where">
+            <strong>Aplicação:</strong>
+            Botões com aparência clicável, links destacados em dourado,
+            efeitos de hover, campos de formulário claramente identificados
+            e ícones que auxiliam na compreensão das ações disponíveis.
+          </p>
+        </div>
+
+        <div class="heuristic-card">
+          <div class="heuristic-number">F</div>
+          <h4>Design Thinking</h4>
+          <p>
+            O desenvolvimento do portfólio foi orientado pela perspectiva do usuário,
+            buscando apresentar informações de forma clara, organizada e acessível.
+          </p>
+          <p class="heuristic-where">
+            <strong>Aplicação:</strong>
+            Estruturação do conteúdo em seções intuitivas,
+            priorização das informações mais importantes,
+            simplificação da navegação e adaptação para diferentes dispositivos.
           </p>
         </div>
 
       </div>
 
+      <!-- Tecnologias Utilizadas -->
+      <div class="section-header" style="margin-top:5rem;">
+        <span class="section-tag">Tecnologias</span>
+        <h2>Implementação do Projeto</h2>
+      </div>
+
+      <div class="heuristic-grid">
+
+        <div class="heuristic-card">
+          <div class="heuristic-number">01</div>
+
+          <h4>HTML5</h4>
+
+          <p>
+            Responsável pela estrutura semântica do portfólio,
+            organizando conteúdos como navegação, seções, formulários
+            e informações profissionais de forma acessível.
+          </p>
+
+          <p class="heuristic-where">
+            <strong>Aplicação:</strong>
+            Uso de tags semânticas como
+            &lt;header&gt;, &lt;nav&gt;, &lt;section&gt;,
+            &lt;footer&gt; e formulários estruturados.
+          </p>
+        </div>
+
+        <div class="heuristic-card">
+          <div class="heuristic-number">02</div>
+
+          <h4>CSS3</h4>
+
+          <p>
+            Responsável pelo design visual do projeto,
+            garantindo identidade visual consistente,
+            responsividade e melhor experiência do usuário.
+          </p>
+
+          <p class="heuristic-where">
+            <strong>Aplicação:</strong>
+            CSS Grid, Flexbox, Media Queries,
+            variáveis CSS, animações e transições visuais.
+          </p>
+        </div>
+
+        <div class="heuristic-card">
+          <div class="heuristic-number">03</div>
+
+          <h4>JavaScript</h4>
+
+          <p>
+            Responsável pela interatividade do sistema,
+            tornando a navegação mais dinâmica e intuitiva.
+          </p>
+
+          <p class="heuristic-where">
+            <strong>Aplicação:</strong>
+            Menu responsivo, carregamento reutilizável do
+            header e footer, validação de formulários,
+            animações de scroll e efeitos de interação.
+          </p>
+        </div>
+
+        <div class="heuristic-card">
+          <div class="heuristic-number">04</div>
+
+          <h4>Design Responsivo</h4>
+
+          <p>
+            O projeto foi desenvolvido seguindo o conceito
+            Mobile First Adaptado, garantindo funcionamento
+            adequado em diferentes resoluções.
+          </p>
+
+          <p class="heuristic-where">
+            <strong>Aplicação:</strong>
+            Desktop, notebook, tablet e smartphone com
+            reorganização automática dos componentes.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Conclusão -->
+      <div class="section-header" style="margin-top:5rem;">
+        <span class="section-tag">Conclusão</span>
+        <h2>Resultados Obtidos</h2>
+      </div>
+
+      <div class="card">
+        <h3>Aplicação dos Conceitos de IHC</h3>
+
+        <p>
+          O desenvolvimento deste portfólio permitiu aplicar na prática
+          conceitos estudados em Interação Humano-Computador,
+          incluindo heurísticas de Nielsen, acessibilidade,
+          responsividade, feedback visual e consistência de interface.
+        </p>
+
+        <p><br>
+          O resultado é uma aplicação web que apresenta informações
+          profissionais de forma organizada, intuitiva e adaptada
+          para diferentes dispositivos, proporcionando uma melhor
+          experiência de navegação ao usuário.
+        </p>
+      </div>
+
     </div>
+
+  
   </section>
 
   <div id="footer"></div>

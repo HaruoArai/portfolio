@@ -1219,7 +1219,22 @@ EFEITO PROFISSIONAL:
   color: rgba(201,168,76,0.15);
   line-height: 1;
   margin-bottom: 0.5rem;
+
+  transition:
+    color .3s ease,
+    transform .3s ease,
+    text-shadow .3s ease;
 }
+
+/* Destaque ao passar o mouse no card */
+.heuristic-card:hover .heuristic-number {
+  color: var(--gold);
+  transform: translateX(8px);
+
+  text-shadow:
+    0 0 15px rgba(201,168,76,0.4);
+}
+
 .heuristic-card h4 {
   font-family: var(--font-display);
   font-size: 1.1rem;
